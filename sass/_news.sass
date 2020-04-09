@@ -1,0 +1,67 @@
+.news
+  padding-bottom: 109px
+  background: #f9f9f9
+  &-slider
+    &-box
+      position: relative
+      width: 554px
+      height: 341px
+      background: #ffffff
+      margin: 0 15px 0 15px
+      &::after
+          content: url(../img/news/icon-2.png)
+          position: absolute
+          top: 0
+          left: 69px
+      &1
+        position: relative
+        background: none
+        width: 261px
+        margin: 0 15px 0 15px
+        &::after
+          content: url(../img/news/icon-1.png)
+          position: absolute
+          top: 0
+          left: 10px
+      &-block
+        padding:  62px 0 47px 70px
+        margin: 0 15px 0 15px
+
+        
+      & img
+        padding-bottom: 20px
+    &-title
+      font-size: 18px
+      color: #242424
+      padding-bottom: 19px
+      font-weight: 600
+
+      &1
+        font-size: 16px
+        padding-bottom: 17px
+        font-weight: 600
+    &-subtitle
+      font-size: 14px
+      color: #5e5e5e
+      
+    &-up
+      padding-top: 37px
+      font-size: 14px
+      color: #212020
+
+.slider-arrow
+  position: absolute
+  top: 65%
+  height: 100%
+  width: 40px
+  z-index: 1
+  &-left
+    background: url(../img/news/2.png) center no-repeat
+    left: 45%
+    &:hover
+      background: url(../img/news/31.png) center no-repeat
+  &-right
+    background: url(../img/news/21.png) center no-repeat
+    right: 45%
+    &:hover
+      background: url(../img/news/3.png) center no-repeat
