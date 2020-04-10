@@ -304,7 +304,7 @@ a {
   background: #373636;
 }
 
-.button-sr {
+.button-sr, .button-con1 {
   width: 148px;
   height: 40px;
   border: 2px solid #ffc222;
@@ -315,19 +315,19 @@ a {
   color: #373636;
 }
 
-.button-sr img {
+.button-sr img, .button-con1 img {
   padding: 0;
   height: 36px;
 }
 
-.button-sr:hover {
+.button-sr:hover, .button-con1:hover {
   background: #ffc222;
   color: #ffffff;
   padding-left: 0;
   display: block;
 }
 
-.button-sr:hover img {
+.button-sr:hover img, .button-con1:hover img {
   display: none;
 }
 
@@ -460,7 +460,9 @@ a {
   width: 211px;
   height: 40px;
   background: none;
-  padding-left: 66px;
+  padding: 0 0 0 66px;
+  border: 2px solid #ffc222;
+  font-weight: 600;
 }
 
 .advantages {
@@ -575,6 +577,7 @@ a {
 .slider-arrow-left {
   background: url(../img/news/2.png) center no-repeat;
   left: 44%;
+  cursor: pointer;
 }
 
 .slider-arrow-left:hover {
@@ -584,6 +587,7 @@ a {
 .slider-arrow-right {
   background: url(../img/news/21.png) center no-repeat;
   right: 44%;
+  cursor: pointer;
 }
 
 .slider-arrow-right:hover {
