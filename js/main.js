@@ -5,16 +5,40 @@ $(document).ready(function() {
     autoplaySpeed: 8000,
     speed: 3000,
     arrows: false,
-    height: 497
+    height: 497,
+
+
   });
 
   $('.news-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    centerMode: true,
     variableWidth: true,
     prevArrow: '<div class="slider-arrow slider-arrow-left"></div>',
     nextArrow: '<div class="slider-arrow slider-arrow-right"></div>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          
+        }
+      }
+   
+
+    ]
   });
 
 });
